@@ -6,6 +6,8 @@
     <title>Html FORMS</title>
 </head>
 <body>
+    <h1>CONTACT FORMS</h1>
+    <form action="results.html"method="GET">
     <Table>
         <!--Basic texts-->
         <tr>
@@ -33,10 +35,23 @@
            <td><input type="url" name="website" id="website"></td>
          </tr>
          <!--Date-->
-         
+         <tr> 
+         <td><label for="--Date--">Date:</label></td>
+        <td><input type="date"></td>
+         </tr>
          <!--Multi-Line Text Area-->
-         <td><label for="message"></label></td>
+         <td><label for="message"> Message</label></td>
          <td><textarea name="message" id="message" rows="4"></textarea></td>
+          <tr>  
+            <td>Favorite Sports</td>
+            <td>
+                <select name="sports" id="sports">
+                     <option value=""select disabled> Select A sport</option>
+                    <option value="soccer">Soccer</option>
+                    <option value="Baseball">Baseball</option>
+                    <option value="Basketball">Basketball</option>
+                </select>
+            <tr>
          <!--Radio Button Multiple choice-->
          <tr>
             <td>Grade:</td>
@@ -46,7 +61,19 @@
             </td>
          </tr>
          <!--Select (Drop Down)-->
-
+         
+            <td>Grade:</td>
+            <td>
+            <label><input type="checkbox" name="checkbox" value="9th">9th Grade</label>
+            <label><input type="checkbox" name="checkbox" value="10th">10th Grade</label>
+            </td>
+         </tr>
+            </td>
+          </tr>
     </Table>
+          <tr>
+          <button type="submit">submit</button>
+          </tr>
+          
 </body>
 </html>
